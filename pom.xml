@@ -34,11 +34,21 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.cdimascio/dotenv-java -->
+		<dependency>
+		    <groupId>io.github.cdimascio</groupId>
+		    <artifactId>dotenv-java</artifactId>
+		    <version>3.1.0</version>
+		</dependency>
+
 		<dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
-
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-mail</artifactId>
+		</dependency>
 		<!--<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
@@ -46,6 +56,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>20250107</version>
 		</dependency>
 
 
@@ -55,11 +71,11 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
+		<!--<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -84,7 +100,7 @@
 	</dependencies>
 
 	<build>
-		<plugins>
+		<!--<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -109,7 +125,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
-		</plugins>
+		</plugins>-->
 	</build>
 
 </project>
