@@ -1,5 +1,7 @@
 package com.app.controller;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -24,6 +26,18 @@ public class UserController {
 	        userService.registerUser(user);
 	        return ResponseEntity.ok("User registered successfully!");
 	    }
+	    
+	    @PostMapping("/login")
+	    public Map<String, String> login(@RequestBody AppUser credentials) {
+	        String username = credentials.getUserName();
+	        String password = credentials.getPassword();
+	        System.out.println("🔍 Checking username: " + username);
+	        if (username == null || password == null) {
+	            throw new RuntimeException("Username or password missing in request body");
+	        }
+	        return userService.loginUser(username, password);
+	    }
+
 	    
 
 }

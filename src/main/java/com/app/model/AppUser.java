@@ -4,7 +4,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-
+import lombok.*;
+@Setter
+@Getter
 @Document(collection = "User")
 public class AppUser {
 	
