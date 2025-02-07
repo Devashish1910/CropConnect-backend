@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "gov.api.url",
+    "type": "java.lang.String",
+    "description": "A description for 'gov.api.url'"
+  },
+  {
+    "name": "gov.api.key",
+    "type": "java.lang.String",
+    "description": "A description for 'gov.api.key'"
+  },
+  {
+    "name": "admin.email",
+    "type": "java.lang.String",
+    "description": "A description for 'admin.email'"
+  }
+]}

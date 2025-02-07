@@ -19,6 +19,10 @@ public class CropConnectBackendApplication {
 		System.setProperty("spring.data.mongodb.uri", dotenv.get("MONGO_URI"));
 		System.setProperty("spring.mail.username", dotenv.get("ADMIN_EMAIL"));
 		System.setProperty("spring.mail.password", dotenv.get("ADMIN_PASSWORD"));
+		System.setProperty("GOV_API_KEY", dotenv.get("GOV_API_KEY"));
+	
+//		System.setProperty("STATE_API_KEY", dotenv.get("STATE_API_KEY"));
+		System.out.println("https://localhost:8080");
 		SpringApplication.run(CropConnectBackendApplication.class, args);
 		
 	}

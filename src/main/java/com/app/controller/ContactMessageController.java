@@ -1,13 +1,14 @@
 package com.app.controller;
 
 import com.app.model.ContactMessage;
+
 import com.app.service.ContactMessageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/messages")
-@CrossOrigin(origins = "*")
+@RequestMapping("/messages")
+//@CrossOrigin(origins = "*")
 public class ContactMessageController {
 
     @Autowired
