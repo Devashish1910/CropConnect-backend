@@ -13,7 +13,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class CorsConfig {
 	
-<<<<<<< HEAD
 	 @Bean
 	    public CorsConfigurationSource corsConfigurationSource() {
 	        CorsConfiguration configuration = new CorsConfiguration();
@@ -26,7 +25,6 @@ public class CorsConfig {
 	        source.registerCorsConfiguration("/**", configuration);
 	        return source;
 	    }
-=======
 	@Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
@@ -40,6 +38,5 @@ public class CorsConfig {
             }
         };
     }
->>>>>>> 62502bebd13099a7303398db54d0ceba7f59b800
 
 }
