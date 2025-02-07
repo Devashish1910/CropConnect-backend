@@ -40,6 +40,7 @@ public class AdminController {
 	@GetMapping("/users")
 	public List<AppUser> getAllUsers()
 	{
+		System.out.println("Inside get all users method");
 		return adminService.getAllUsers();
 	}
 	
